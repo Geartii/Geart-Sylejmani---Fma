@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Capital Example</title>
+    <style>
+        .drop-cap {
+            font-family: 'Times New Roman', serif;
+            font-size: 20px;
+            line-height: 2.0;
+        }
+
+        .drop-cap::first-letter {
+            font-size: 3em;
+            font-weight: bold;
+            float: left;
+            line-height: 1.2;
+            margin-right: 10px;
+            text-transform: uppercase;
+        }
+
+        .drop-cap::first-line {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <p class="drop-cap">
+        Decorative initials<br> used as drop capitals<br> should be positioned<br> on a text baseline and<br> be sized so that the top of capital<br> letters aligns with the cap height on<br> the first line of text.
+    </p>
+</body>
+</html>

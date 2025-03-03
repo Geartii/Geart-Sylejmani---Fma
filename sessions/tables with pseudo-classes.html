@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+            color: #fff; /* White text for better contrast */
+        }
+
+        thead tr {
+            background-color: #03e35b; /* Bright green for the header */
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #007a30; /* Dark green for odd rows */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #03e35b; /* Bright green for even rows */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+                <th>Hobby</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>21</td>
+                <td>Football</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>21</td>
+                <td>Football</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>21</td>
+                <td>Football</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>21</td>
+                <td>Football</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>25</td>
+                <td>Reading</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
